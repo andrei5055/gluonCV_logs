@@ -1,0 +1,52 @@
+Namespace(batch_norm=False, batch_size=32, batchnorm_layout='NCHW', conv_layout='NCHW', crop_ratio=0.875, dali_fuse_decoder=1, dali_nvjpeg_memory_padding=64, dali_prefetch_queue=2, dali_separ_val=False, dali_threads=3, dali_validation_threads=10, data_backend='dali-gpu', data_dir='/data/imagenet/train-480-val-256-recordio', data_pred=None, data_val_resize=256, dtype='float32', flag=1, hard_weight=0.5, image_shape=[3, 224, 224], input_layout='NCHW', input_size=224, kv_store='device', label_smoothing=False, last_gamma=False, log_interval=50, logging_file='train_imagenet.log', lr=0.1, lr_decay=0.1, lr_decay_epoch='40,60', lr_decay_period=0, lr_mode='step', mixup=False, mixup_alpha=0.2, mixup_off_epoch=0, mode=None, model='resnet18_v1', momentum=0.9, no_wd=False, num_epochs=3, num_examples=1281167, num_gpus=8, num_training_samples=1281167, num_workers=4, pooling_layout='NCHW', rec_train='/data/imagenet/train-480-val-256-recordio/train.rec', rec_train_idx='/data/imagenet/train-480-val-256-recordio/train.idx', rec_val='/data/imagenet/train-480-val-256-recordio/val.rec', rec_val_idx='/data/imagenet/train-480-val-256-recordio/val.idx', resume_epoch=0, resume_params='', resume_states='', rgb_mean=[123.68, 116.779, 103.939], rgb_std=[58.393, 57.12, 57.375], save_dir='params', save_frequency=10, teacher=None, temperature=20, use_gn=False, use_pretrained=False, use_rec=True, use_se=False, warmup_epochs=0, warmup_lr=0.0, wd=0.0001)
+DALI iterator does not support resetting while epoch is not finished. Ignoring...
+Epoch[0] Batch [50]	Speed: 1454.823155 samples/sec	accuracy=0.008906	lr=0.100000
+Epoch[0] Batch [100]	Speed: 1601.455324 samples/sec	accuracy=0.017241	lr=0.100000
+Epoch[0] Batch [150]	Speed: 1612.268863 samples/sec	accuracy=0.026058	lr=0.100000
+Epoch[0] Batch [200]	Speed: 1641.156241 samples/sec	accuracy=0.035605	lr=0.100000
+Epoch[0] Batch [250]	Speed: 1640.130726 samples/sec	accuracy=0.045414	lr=0.100000
+Epoch[0] Batch [300]	Speed: 1634.818453 samples/sec	accuracy=0.055845	lr=0.100000
+Epoch[0] Batch [350]	Speed: 1623.225231 samples/sec	accuracy=0.066106	lr=0.100000
+Epoch[0] Batch [400]	Speed: 1577.213799 samples/sec	accuracy=0.075985	lr=0.100000
+Epoch[0] Batch [450]	Speed: 1572.891203 samples/sec	accuracy=0.085610	lr=0.100000
+Epoch[0] Batch [500]	Speed: 1631.206640 samples/sec	accuracy=0.094870	lr=0.100000
+Epoch[0] Batch [550]	Speed: 1644.423678 samples/sec	accuracy=0.103944	lr=0.100000
+Epoch[0] Batch [600]	Speed: 1610.529613 samples/sec	accuracy=0.112541	lr=0.100000
+Epoch[0] Batch [625]	Speed: 1548.332642 samples/sec	accuracy=0.116901	lr=0.100000
+DALI iterator does not support resetting while epoch is not finished. Ignoring...
+[Epoch 0] training: accuracy=0.116901
+[Epoch 0] speed: 1599 samples/sec	time cost: 800.154183
+[Epoch 0] validation: err-top1=0.760039 err-top5=0.526055
+Epoch[1] Batch [50]	Speed: 1594.403462 samples/sec	accuracy=0.225947	lr=0.100000
+Epoch[1] Batch [100]	Speed: 1605.957068 samples/sec	accuracy=0.231938	lr=0.100000
+Epoch[1] Batch [150]	Speed: 1629.326739 samples/sec	accuracy=0.237070	lr=0.100000
+Epoch[1] Batch [200]	Speed: 1619.287504 samples/sec	accuracy=0.241262	lr=0.100000
+Epoch[1] Batch [250]	Speed: 1622.326520 samples/sec	accuracy=0.246012	lr=0.100000
+Epoch[1] Batch [300]	Speed: 1561.933471 samples/sec	accuracy=0.250827	lr=0.100000
+Epoch[1] Batch [350]	Speed: 1605.612477 samples/sec	accuracy=0.254990	lr=0.100000
+Epoch[1] Batch [400]	Speed: 1614.717791 samples/sec	accuracy=0.258951	lr=0.100000
+Epoch[1] Batch [450]	Speed: 1607.647787 samples/sec	accuracy=0.262722	lr=0.100000
+Epoch[1] Batch [500]	Speed: 1634.351877 samples/sec	accuracy=0.266089	lr=0.100000
+Epoch[1] Batch [550]	Speed: 1623.832824 samples/sec	accuracy=0.269798	lr=0.100000
+Epoch[1] Batch [600]	Speed: 1604.017006 samples/sec	accuracy=0.273117	lr=0.100000
+Epoch[1] Batch [625]	Speed: 1546.757654 samples/sec	accuracy=0.274817	lr=0.100000
+[Epoch 1] training: accuracy=0.274817
+[Epoch 1] speed: 1607 samples/sec	time cost: 796.339114
+[Epoch 1] validation: err-top1=0.665649 err-top5=0.401021
+Epoch[2] Batch [50]	Speed: 1621.538349 samples/sec	accuracy=0.313848	lr=0.100000
+Epoch[2] Batch [100]	Speed: 1635.981033 samples/sec	accuracy=0.318228	lr=0.100000
+Epoch[2] Batch [150]	Speed: 1616.985685 samples/sec	accuracy=0.320361	lr=0.100000
+Epoch[2] Batch [200]	Speed: 1636.989734 samples/sec	accuracy=0.322073	lr=0.100000
+Epoch[2] Batch [250]	Speed: 1611.468587 samples/sec	accuracy=0.323836	lr=0.100000
+Epoch[2] Batch [300]	Speed: 1504.401738 samples/sec	accuracy=0.326081	lr=0.100000
+Epoch[2] Batch [350]	Speed: 1584.555412 samples/sec	accuracy=0.327875	lr=0.100000
+Epoch[2] Batch [400]	Speed: 1636.314963 samples/sec	accuracy=0.329713	lr=0.100000
+Epoch[2] Batch [450]	Speed: 1626.855534 samples/sec	accuracy=0.331490	lr=0.100000
+Epoch[2] Batch [500]	Speed: 1628.227146 samples/sec	accuracy=0.333106	lr=0.100000
+Epoch[2] Batch [550]	Speed: 1622.598531 samples/sec	accuracy=0.334494	lr=0.100000
+Epoch[2] Batch [600]	Speed: 1565.307501 samples/sec	accuracy=0.336060	lr=0.100000
+Epoch[2] Batch [624]	Speed: 1569.989742 samples/sec	accuracy=0.337018	lr=0.100000
+[Epoch 2] training: accuracy=0.337018
+[Epoch 2] speed: 1605 samples/sec	time cost: 796.153596
+[Epoch 2] validation: err-top1=0.619063 err-top5=0.354141
+Training time for 3 epochs: 2455.079577 sec.
